@@ -17,4 +17,9 @@ public class JenkinsController {
     public String greetingsFaheem(){
         return "Hello Faheem";
     }
+
+    @GetMapping("/waqas")
+    public String greetingsWaqas(){
+        return "Hello Waqas";
+    }
 }
