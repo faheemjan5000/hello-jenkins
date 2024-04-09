@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-jenkins-service
+spec:
+  selector:
+    app: hello-jenkins
+  ports:
+    - protocol: TCP
+      port: 8080 #port at which the service is running in the cluster
+      targetPort: 8080 #port exposed by the service
+  type: NodePort
