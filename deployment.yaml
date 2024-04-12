@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-jenkins
-        image: hello-jenkinss:1.0
+        image: hello-jenkins:1.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
